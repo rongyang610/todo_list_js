@@ -38,6 +38,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const addListItem = ({ text, completed = false }) => {
     const listItem = document.createElement("li");
+    const leftContainer = document.createElement("div");
+    leftContainer.className = "left-container";
 
     const listItemText = document.createElement("span");
     listItemText.textContent = text;
@@ -58,14 +60,16 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     const deleteButton = document.createElement("button");
-    deleteButton.textContent = "delete";
+    deleteButton.textContent = "Delete";
+    deleteButton.className = "delete-button";
     deleteButton.setAttribute("aria-label", `Delete ${text}`);
     deleteButton.addEventListener("click", () => {
       list.removeChild(listItem);
     });
 
-    listItem.appendChild(listItemCheckbox);
-    listItem.appendChild(listItemText);
+    leftContainer.appendChild(listItemCheckbox);
+    leftContainer.appendChild(listItemText);
+    listItem.appendChild(leftContainer);
     listItem.appendChild(deleteButton);
 
     list.appendChild(listItem);

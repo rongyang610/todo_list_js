@@ -15,3 +15,86 @@ body {
   margin: 0;
   font-family: sans-serif; /* Set a default font family */
 }
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 60px auto;
+  max-width: 600px;
+  width: 100%;
+  gap: 42px;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  width: 100%;
+}
+
+input[type="text"] {
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid blue;
+  outline: none;
+}
+
+button {
+  padding: 8px 12px;
+  border-radius: 8px;
+  background-color: blue;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0303b9;
+}
+
+button[disabled] {
+  opacity: 0.2;
+  cursor: not-allowed;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+  gap: 20px;
+  border-bottom: 1px solid lightgrey;
+}
+
+li:last-child {
+  border: none;
+}
+
+#todo-form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 12px;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.left-container {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.delete-button {
+  background-color: red;
+  border: none;
+}
+
+.delete-button:hover {
+  background-color: #b20606;
+}
