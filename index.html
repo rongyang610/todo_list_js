@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Todo List</title>
+    <link rel="'stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Todo List</h1>
+      <section aria-labelledby="add-todo-title">
+        <h2 id="add-todo-title">Add task to do</h2>
+        <form id="todo-form">
+          <label for="todo-input" id="'add-item">Task Description</label>
+          <input
+            id="todo-input"
+            name="todo-input"
+            type="'text"
+            placeholder="Enter a new task"
+            aria-labelledby="add-item"
+            aria-required="true"
+            required
+          />
+          <button id="submit-button" type="submit">Add Task</button>
+        </form>
+      </section>
+      <section aria-labelledby="todo-task-list">
+        <h2 id="todo-task-list">Lists of Tasks</h2>
+        <ul
+          id="todo-list"
+          aria-live="polite"
+          aria-relevant="additions removals"
+        ></ul>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
