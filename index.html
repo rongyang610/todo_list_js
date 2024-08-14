@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <title>Todo List</title>
-    <link rel="'stylesheet" href="/styles.css" />
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <main>
@@ -12,16 +12,18 @@
       <section aria-labelledby="add-todo-title">
         <h2 id="add-todo-title">Add task to do</h2>
         <form id="todo-form">
-          <label for="todo-input" id="'add-item">Task Description</label>
-          <input
-            id="todo-input"
-            name="todo-input"
-            type="'text"
-            placeholder="Enter a new task"
-            aria-labelledby="add-item"
-            aria-required="true"
-            required
-          />
+          <div class="input-container">
+            <label for="todo-input" id="'add-item">Task Description</label>
+            <input
+              id="todo-input"
+              name="todo-input"
+              type="text"
+              placeholder="Enter a new task"
+              aria-labelledby="add-item"
+              aria-required="true"
+              required
+            />
+          </div>
           <button id="submit-button" type="submit">Add Task</button>
         </form>
       </section>
